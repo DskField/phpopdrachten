@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 
 <?php
-/**
- * User: David S. Klein Velderman
- * Date: Date
- * Time: 12:06 PM
- * File: index.php
- */
+require "includes/moduleheader.php"
 ?>
 
-<html>
+<html lang="nl">
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>
+        Uitwerkingen
+    </title>
+</head>
 
-    <body>
+<body class="flex-verti">
 
-        <header>
-            <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
-        </header>
+<?php
+include "includes/header.php"
+?>
 
-        <aside>
-            <h2>
-                Menu
-            </h2>
+        <!-- Container voor onder de header -->
+        <div class="maincont flex-horizon">
 
-            <ul>
-                <li>
-                    Hoofdstuk 2
-                    <ul>
-                        <li>
-                            <a href="hoofdstuk2/opdracht_2-1.php">Opdracht 2.1</a>
-                        </li>
-                        <li>
-                            <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 2.2</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
+            <?php
+            require "includes/menu.php"
+            ?>
 
-        <main id="wrapper">
-            <h2>
-                Uitwerkingen
-            </h2>
-        </main>
+            <!-- Uitwerkingen -->
+            <main id="wrapper">
+                <h2>
+                    Uitwerkingen
+                </h2>
+            </main>
+
+        </div>
 
     </body>
 
-
 </html>
-
 
 
 

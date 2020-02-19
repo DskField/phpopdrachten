@@ -1,0 +1,40 @@
+/* Haalt die scrollbar weg */
+* { /* Firefox */
+    scrollbar-width: none;
+}
+::-webkit-scrollbar { /* Chrome */
+    display: none;
+}
+
+body {
+    margin: unset;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #a2a2a2;
+}
+
+.maincont {
+    height: 100%;
+}
+
+.flex-verti {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-horizon {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu {
+    background-color: #a2a2a2;
+
+    padding-left: 5px;
+    padding-right: 10px;
+
+    height: 100%;
+}
