@@ -1,6 +1,6 @@
 <?php
 
-    $event = "Elfstedentocht";
+    $event = "De Elfstedentocht";
     $eventAlt = "Alvestêdetocht";
     $distance = 200;
     $compType = "schaatstocht";
@@ -12,8 +12,15 @@
     $originYear = 1909;
     $maxFreq = 1;
 
+    $verhaalEen =
+        "$event (Fries: $eventAlt is een $distance kilometer lange $compType over $terrain
+        die wordt georganiseerd door de $org. $mainCity, de hoofdstad van $province, is start-en aankomstplaats. 
+        $event is inmiddels $compfreq maal verreden en werd voor het eerst in $originYear gereden en wordt maximaal 
+        $maxFreq keer per winter gehouden.";
+
     // Verhaal
-    $verhaal = "De " . $event
+    $verhaal =
+        $event
         . " (Fries: " . $eventAlt
         . ") is een " . $distance
         . " kilometer lange " . $compType
@@ -21,10 +28,10 @@
         . " die wordt georganiseerd door de " . $org
         . ". " . $mainCity
         . ", de hoofdstad van " . $province
-        . ", is start-en aankomstplaats. De " . $event
+        . ", is start-en aankomstplaats. " . $event
         . " is inmiddels " . $compfreq
         . " maal verreden en werd voor het eerst in " . $originYear
         . " gereden en wordt maximaal " . $maxFreq
         . " keer per winter gehouden.";
 
-    echo "<p>" . $verhaal . "</p>";
+    echo "<p>" . $verhaalEen . "</p>";
