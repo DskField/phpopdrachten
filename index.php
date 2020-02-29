@@ -15,9 +15,9 @@ require "includes/moduleheader.php"
 
 <body class="flex-verti">
 
-<?php
-include "includes/header.php"
-?>
+    <?php
+        include "includes/header.php"
+    ?>
 
         <!-- Container voor onder de header -->
         <div class="maincont flex-horizon">
@@ -35,7 +35,11 @@ include "includes/header.php"
 
         </div>
 
-    </body>
+    <?php
+        include "includes/footer.php"
+    ?>
+
+</body>
 
 </html>
 
