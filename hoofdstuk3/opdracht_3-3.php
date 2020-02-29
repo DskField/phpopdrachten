@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 
 <?php
-require "includes/moduleheader.php"
+require "../includes/moduleheader.php"
 ?>
-
 
 <html lang="nl">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>
         Uitwerkingen
     </title>
@@ -17,15 +16,15 @@ require "includes/moduleheader.php"
 <body class="flex-verti">
 
     <?php
-        include "hoofdstuk3/variabelen.php";
-        include "includes/header.php";
+        include "variabelen.php";
+        include "../includes/header.php"
     ?>
 
         <!-- Container voor onder de header -->
         <div class="maincont flex-horizon">
 
             <?php
-            require "includes/menu.php"
+            require "../includes/menu.php"
             ?>
 
             <!-- Uitwerkingen -->
@@ -38,7 +37,7 @@ require "includes/moduleheader.php"
         </div>
 
     <?php
-        include "includes/footer.php"
+        include "../includes/footer.php"
     ?>
 
 </body>

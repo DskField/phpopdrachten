@@ -1,3 +1,10 @@
-<footer>
-    <p> Copyright David S. Klein Velderman 2020 </p>
-</footer>
+<?php
+
+    echo "
+        <footer>
+            <p> Copyright " . $name . " " . $year . "</p>
+        </footer>
+        ";
+
+?>
+
