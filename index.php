@@ -4,7 +4,6 @@
 require "includes/moduleheader.php"
 ?>
 
-
 <html lang="nl">
 
 <head>
@@ -44,6 +43,3 @@ require "includes/moduleheader.php"
 </body>
 
 </html>
-
-
-

@@ -16,7 +16,16 @@ header {
     background-color: #a2a2a2;
 }
 
-footer > p {
+main {
+    width: 100%;
+}
+
+footer {
+    background-color: #a2a2a2;
+}
+
+footer > p,
+h2 {
     text-align: center;
 }
 
@@ -41,4 +50,5 @@ footer > p {
     padding-right: 10px;
 
     height: 100%;
+    width: 15%;
 }
