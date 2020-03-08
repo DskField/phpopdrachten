@@ -1,3 +1,3 @@
 <header>
-    <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
+    <h1>Uitwerking van PHP-opdrachten</h1>
 </header>

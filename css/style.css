@@ -13,20 +13,36 @@ body {
 }
 
 header {
-    background-color: #a2a2a2;
+    background: linear-gradient(0deg, rgba(70,69,92,1) 0%, rgba(9,9,121,1) 100%);
+
+}
+
+header > h1 {
+    color: #fff;
+    text-align: center;
 }
 
 main {
     width: 100%;
 }
 
-footer {
-    background-color: #a2a2a2;
+footer,
+#menu{
+    background-color: #46455c;
+    color: #fff;
 }
 
 footer > p,
 h2 {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a8a8a8;
 }
 
 .maincont {
@@ -44,11 +60,14 @@ h2 {
 }
 
 #menu {
-    background-color: #a2a2a2;
-
     padding-left: 5px;
     padding-right: 10px;
 
     height: 100%;
     width: 15%;
+}
+
+#menu > ul,
+#menu > ul > li > ul{
+    list-style: none;
 }
