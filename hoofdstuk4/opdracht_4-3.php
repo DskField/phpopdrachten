@@ -3,7 +3,7 @@
 <?php
 require "../includes/moduleheader.php";
 require "../hoofdstuk3/variabelen.php";
-include "script4-2.php";
+include "script4-3.php";
 ?>
 
 <html lang="nl">
@@ -11,7 +11,7 @@ include "script4-2.php";
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>
-        Opdracht 4.2
+        Opdracht 4.3
     </title>
 </head>
 
@@ -36,9 +36,14 @@ include "../includes/header.php";
 
         <p>
             <?php
-                echo "Voor het vak <strong>$courseName</strong> heb je <strong>$teacherName</strong> als docent.";
+                echo "<h3>Taak 2: </h3>" . $task2;
+                echo "<br/>";
+                echo $task3;
+                echo $task4;
+                echo $task5;
+                echo $task6;
+                echo $task7;
             ?>
-
         </p>
     </main>
 

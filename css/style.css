@@ -24,6 +24,7 @@ header > h1 {
 
 main {
     width: 100%;
+    overflow: auto;
 }
 
 footer,
@@ -33,7 +34,7 @@ footer,
 }
 
 footer > p,
-h2 {
+main > h2:first-child {
     text-align: center;
 }
 
