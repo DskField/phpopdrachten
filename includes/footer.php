@@ -25,7 +25,7 @@
     echo "
         <footer>
             <p> $wens</p>
-            <p> Copyright " . $name . " " . "anno" . $year . "</p>
+            <p> Copyright " . $name . " " . "anno " . $year . "</p>
         </footer>
         ";
 
