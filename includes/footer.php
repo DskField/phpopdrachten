@@ -1,8 +1,8 @@
 <?php
 
-    $uur = date("H");
     date_default_timezone_set("Europe/Amsterdam");
-
+    $uur = date("H");
+    
     $wens = null;
 
     if

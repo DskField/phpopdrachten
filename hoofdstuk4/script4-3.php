@@ -58,12 +58,11 @@
             $task7 .= "<p>In " . $nuCountYear . " ben/word ik " . ($age) . " jaar oud</p>";
         }
 
-        elseif ($age == 0){
-            $task7 .= "<p>In " . $nuCountYear . " ben ik geboren</p>";
-        }
-
         else {
             switch ($age) {
+                case 0:
+                    $task7 .= "<p>In " . $nuCountYear . " ben ik geboren</p>";
+                    break;
                 case 2:
                     $task7 .= "<p>In " . $nuCountYear . " was ik " . ($age) . " jaar oud en werd ik een peuter</p>";
                     break;
