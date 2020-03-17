@@ -10,7 +10,7 @@ require "../hoofdstuk3/variabelen.php";
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>
-        Opdracht 4.3
+        Opdracht 4.4
     </title>
 </head>
 
@@ -35,7 +35,55 @@ include "../includes/header.php";
 
         <p>
             <?php
-                echo "Vandaag is rood";
+
+                echo "<h3> Taak 1 </h3>";
+                date_default_timezone_set("Europe/Amsterdam");
+
+                for ($i = 0; $i < 7; $i++) {
+                    $weekdayEN = Date("D", strtotime("+$i days"));
+                    $weekdayNL = null;
+                    $day = Date("d-m-Y", strtotime("+$i days"));
+
+
+                    switch ($weekdayEN) {
+                        case "Mon":
+                            $weekdayNL = "Maandag";
+                            break;
+                        case "Tue":
+                            $weekdayNL = "Dinsdag";
+                            break;
+                        case "Wed":
+                            $weekdayNL = "Woensdag";
+                            break;
+                        case "Thu":
+                            $weekdayNL = "Donderdag";
+                            break;
+                        case "Fri":
+                            $weekdayNL = "Vrijdag";
+                            break;
+                        case "Sat":
+                            $weekdayNL = "Zaterdag";
+                            break;
+                        case "Sun":
+                            $weekdayNL = "Zondag";
+                            break;
+                    }
+
+                    echo "Dag " . $i . " is " . $weekdayNL . " " . $day . "<br />";
+                }
+
+                echo "<br /> <hr>";
+
+                echo "<h3> Taak 2 </h3>";
+
+                for ($x = 0; $x < 7; $x++) {
+                    $weekdayEN = Date("D", strtotime("+$x days"));
+                    $dayStr = null;
+                    $day = Date("d-m-Y", strtotime("+$i days"));
+
+                    echo "Dag " . $i . " is " . $weekdayNL . " " . $day . "<br />";
+                }
+
             ?>
         </p>
     </main>

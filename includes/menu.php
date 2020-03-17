@@ -6,6 +6,9 @@
 
     <ul>
         <li>
+            <a href="../index.php">Home</a>
+        </li>
+        <li>
             Hoofdstuk 2
             <ul>
                 <li>

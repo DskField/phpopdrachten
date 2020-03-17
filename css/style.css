@@ -39,9 +39,6 @@ footer,
 footer {
     background: #2d38fd;
 }
-#menu{
-    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
-}
 
 footer > p,
 main > h2:first-child {
@@ -53,7 +50,11 @@ a {
 }
 
 a:visited {
-    color: #a8a8a8;
+    color: #fff;
+}
+
+#menu{
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
 }
 
 .maincont {
