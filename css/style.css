@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: linear-gradient(0deg, rgba(70,69,92,1) 0%, rgba(9,9,121,1) 100%);
+    background: linear-gradient(180deg, rgba(65,65,65,1) 0%, rgba(0,0,0,1) 100%);
 
 }
 
@@ -27,10 +27,20 @@ main {
     overflow: auto;
 }
 
+main > p {
+    margin: 10px;
+}
+
 footer,
-#menu{
-    background-color: #46455c;
+#menu {
     color: #fff;
+}
+
+footer {
+    background: #2d38fd;
+}
+#menu{
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
 }
 
 footer > p,

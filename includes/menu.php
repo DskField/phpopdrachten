@@ -33,7 +33,10 @@
             Hoofdstuk 4
             <ul>
                 <li>
-                    <a href="hoofdstuk4/opdracht_4-2"></a>
+                    <a href="hoofdstuk4/opdracht_4-2.php">Opdracht 4.2</a>
+                </li>
+                <li>
+                    <a href="hoofdstuk4/opdracht_4-3.php">Opdracht 4.3</a>
                 </li>
             </ul>
         </li>
