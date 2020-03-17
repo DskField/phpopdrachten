@@ -47,25 +47,25 @@ include "../includes/header.php";
 
                     switch ($weekdayEN) {
                         case "Mon":
-                            $weekdayNL = "Maandag";
+                            $weekdayNL = "maandag";
                             break;
                         case "Tue":
-                            $weekdayNL = "Dinsdag";
+                            $weekdayNL = "dinsdag";
                             break;
                         case "Wed":
-                            $weekdayNL = "Woensdag";
+                            $weekdayNL = "woensdag";
                             break;
                         case "Thu":
-                            $weekdayNL = "Donderdag";
+                            $weekdayNL = "donderdag";
                             break;
                         case "Fri":
-                            $weekdayNL = "Vrijdag";
+                            $weekdayNL = "vrijdag";
                             break;
                         case "Sat":
-                            $weekdayNL = "Zaterdag";
+                            $weekdayNL = "zaterdag";
                             break;
                         case "Sun":
-                            $weekdayNL = "Zondag";
+                            $weekdayNL = "zondag";
                             break;
                     }
 
@@ -78,10 +78,48 @@ include "../includes/header.php";
 
                 for ($x = 0; $x < 7; $x++) {
                     $weekdayEN = Date("D", strtotime("+$x days"));
-                    $dayStr = null;
-                    $day = Date("d-m-Y", strtotime("+$i days"));
+                    $weekdayNL = null;
+                    $day = Date("d-m-Y", strtotime("+$x days"));
 
-                    echo "Dag " . $i . " is " . $weekdayNL . " " . $day . "<br />";
+                    switch ($weekdayEN) {
+                        case "Mon":
+                            $weekdayNL = "maandag";
+                            break;
+                        case "Tue":
+                            $weekdayNL = "dinsdag";
+                            break;
+                        case "Wed":
+                            $weekdayNL = "woensdag";
+                            break;
+                        case "Thu":
+                            $weekdayNL = "donderdag";
+                            break;
+                        case "Fri":
+                            $weekdayNL = "vrijdag";
+                            break;
+                        case "Sat":
+                            $weekdayNL = "zaterdag";
+                            break;
+                        case "Sun":
+                            $weekdayNL = "zondag";
+                            break;
+                    }
+
+                    if ($x == 0) {
+                        echo "Vandaag is " . $weekdayNL . " " . $day;
+                    }
+                    elseif ($x == 1) {
+                        echo "Morgen is " . $weekdayNL . " " . $day;
+                    }
+
+                    elseif ($x == 2) {
+                        echo "Overmorgen is " . $weekdayNL . " " . $day;
+                    }
+                    else {
+                        echo "Over" . (str_repeat("-over", $x)) . "morgen is " . $weekdayNL . " " . $day;
+                    }
+
+                    echo "<br />";
                 }
 
             ?>
