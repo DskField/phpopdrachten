@@ -40,31 +40,30 @@ include "../includes/header.php";
                 date_default_timezone_set("Europe/Amsterdam");
 
                 for ($i = 0; $i < 7; $i++) {
-                    $weekdayEN = Date("D", strtotime("+$i days"));
+                    $weekdayEN = Date("w", strtotime("+$i days"));
                     $weekdayNL = null;
                     $day = Date("d-m-Y", strtotime("+$i days"));
 
-
                     switch ($weekdayEN) {
-                        case "Mon":
+                        case 1:
                             $weekdayNL = "maandag";
                             break;
-                        case "Tue":
+                        case 2:
                             $weekdayNL = "dinsdag";
                             break;
-                        case "Wed":
+                        case 3:
                             $weekdayNL = "woensdag";
                             break;
-                        case "Thu":
+                        case 4:
                             $weekdayNL = "donderdag";
                             break;
-                        case "Fri":
+                        case 5:
                             $weekdayNL = "vrijdag";
                             break;
-                        case "Sat":
+                        case 6:
                             $weekdayNL = "zaterdag";
                             break;
-                        case "Sun":
+                        case 0:
                             $weekdayNL = "zondag";
                             break;
                     }

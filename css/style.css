@@ -53,6 +53,10 @@ a:visited {
     color: #fff;
 }
 
+ul{
+    list-style: none;
+}
+
 #menu{
     background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
 }
@@ -79,7 +83,4 @@ a:visited {
     width: 15%;
 }
 
-#menu > ul,
-#menu > ul > li > ul{
-    list-style: none;
-}
+

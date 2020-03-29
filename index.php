@@ -32,6 +32,12 @@ require "includes/moduleheader.php"
                 <h2>
                     Uitwerkingen
                 </h2>
+
+                <p>
+                    <?php
+                        // Template
+                    ?>
+                </p>
             </main>
 
         </div>
