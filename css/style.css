@@ -57,6 +57,20 @@ ul{
     list-style: none;
 }
 
+td {
+    width: 250px;
+    vertical-align: top;
+}
+
+.long {
+    width: 300px;
+    padding: unset;
+}
+
+.select {
+    width: 302px !important;
+}
+
 #menu{
     background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
 }
