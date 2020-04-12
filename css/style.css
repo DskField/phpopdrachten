@@ -27,7 +27,7 @@ main {
     overflow: auto;
 }
 
-main > p {
+main > section {
     margin: 10px;
 }
 
@@ -60,6 +60,11 @@ ul{
 td {
     width: 250px;
     vertical-align: top;
+    height: 30px;
+}
+
+label {
+    font-weight: bold;
 }
 
 .long {
@@ -69,10 +74,6 @@ td {
 
 .select {
     width: 302px !important;
-}
-
-#menu{
-    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
 }
 
 .maincont {
@@ -97,4 +98,17 @@ td {
     width: 15%;
 }
 
+#menu{
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
+}
 
+#rivm,
+#rivm:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+#first  + label,
+#second + label {
+    font-weight: normal;
+}
