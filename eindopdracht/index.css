@@ -1,0 +1,15 @@
+td {
+    width: 100px;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.big {
+    font-size: xx-large;
+}
+
+#wrongCred {
+    color: #f00;
+}

@@ -11,7 +11,7 @@ require "../includes/moduleheader.php"
     <title>
         Opdracht 5.3
     </title>
-</head>
+</head>.
 
 <body class="flex-verti">
 
