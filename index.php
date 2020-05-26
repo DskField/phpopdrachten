@@ -16,7 +16,7 @@ require "includes/moduleheader.php"
 <body class="flex-verti">
 
     <?php
-        include "hoofdstuk3/variabelen.php";
+        include "includes/variabelen.php";
         include "includes/header.php";
     ?>
 
