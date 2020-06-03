@@ -72,8 +72,10 @@ include "../../includes/header.php";
                     // Keuze van computer
                     echo "De computer koos: <img src='images/{$opties[$keuzeComp]}.jpg'>";
 
+                    // Winnaar bepalen
                     switch ($keuzeComp) {
 
+                        // Computer kiest steen
                         case 0:
                             switch ($_GET['keuze']) {
                                 case 'steen':
@@ -90,6 +92,7 @@ include "../../includes/header.php";
                             }
                             break;
 
+                        // Computer kiest papier
                         case 1:
                             switch ($_GET['keuze']) {
                                 case 'steen':
@@ -105,6 +108,7 @@ include "../../includes/header.php";
                             }
                             break;
 
+                        // Computer kiest schaar
                         case 2:
                             switch ($_GET['keuze']) {
                                 case 'steen':
@@ -120,6 +124,9 @@ include "../../includes/header.php";
                                     break;
                             }
                     }
+
+                    // Puntensysteem
+
                 }
 
             ?>
