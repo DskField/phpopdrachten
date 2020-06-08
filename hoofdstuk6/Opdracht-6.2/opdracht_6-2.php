@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
 <?php
-require "../../includes/moduleheader.php"
+require "../../includes/moduleheader.php";
+
+// Sessie voor puntensysteem
+$_SESSION['stand'] = array(0,0);
 ?>
 
 <html lang="nl">
@@ -84,10 +87,12 @@ include "../../includes/header.php";
 
                                 case 'papier':
                                     echo "<p>Punt voor jou!</p>";
+                                    $_SESSION['stand'][0] +=1;
                                     break;
 
                                 case 'schaar':
                                     echo "<p>Punt voor de computer!</p>";
+                                    $_SESSION['stand'][1] +=1;
                                     break;
                             }
                             break;
@@ -97,6 +102,7 @@ include "../../includes/header.php";
                             switch ($_GET['keuze']) {
                                 case 'steen':
                                     echo "<p>Punt voor de computer!</p>";
+                                    $_SESSION['stand'][1] +=1;
                                     break;
 
                                 case 'papier':
@@ -105,6 +111,7 @@ include "../../includes/header.php";
 
                                 case 'schaar':
                                     echo "<p>Punt voor jou!</p>";
+                                    $_SESSION['stand'][0] +=1;
                             }
                             break;
 
@@ -113,10 +120,12 @@ include "../../includes/header.php";
                             switch ($_GET['keuze']) {
                                 case 'steen':
                                     echo "<p>Punt voor jou</p>";
+                                    $_SESSION['stand'][0] +=1;
                                     break;
 
                                 case 'papier':
                                     echo "<p>Punt voor de computer!</p>";
+                                    $_SESSION['stand'][1] +=1;
                                     break;
 
                                 case 'schaar':
@@ -125,8 +134,8 @@ include "../../includes/header.php";
                             }
                     }
 
-                    // Puntensysteem
-
+                    // Punten laten zien
+                    echo "Huidige stand:\nJij: {$_SESSION['stand'][0]}\nComputer: {$_SESSION['stand'][1]}";
                 }
 
             ?>
